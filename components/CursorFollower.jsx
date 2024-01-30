@@ -1,4 +1,4 @@
-"use client"
+'use client';
 import React, { useRef, useEffect } from 'react';
 
 const CursorFollower = () => {
@@ -21,7 +21,7 @@ const CursorFollower = () => {
 		return () => {
 			window.removeEventListener('mousemove', handleMouseMove);
 		};
-	},[]);
+	}, []);
 
 	return (
 		<>
