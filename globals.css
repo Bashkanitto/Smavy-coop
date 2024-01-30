@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+	scroll-behavior: smooth;
+}
+
+:root {
+	--primari-color: #6bffd8;
+}
+
 body {
 	background-color: #191925;
 }
@@ -20,71 +28,74 @@ body::before {
 	opacity: 0.05;
 }
 
-.preCursor::after{
+.preCursor::after {
 	content: '|';
 	color: white;
 }
 
-
 .card {
-  position: relative;
-  width: 300px;
-  height: 200px;
-  background: #000; /* Начальный фон - темный */
-  border-radius: 10px;
-  overflow: hidden;
-  cursor: pointer;
-  transition: background-color 0.1s ease;
+	position: relative;
+	width: 300px;
+	height: 200px;
+	background: #000; /* Начальный фон - темный */
+	border-radius: 10px;
+	overflow: hidden;
+	cursor: pointer;
+	transition: background-color 0.1s ease;
 }
 
 .card:hover {
-  background-color: #007BFF; /* Фон при наведении - синий */
-  transition: background-color 0.1s ease;
+	background-color: #007bff; /* Фон при наведении - синий */
+	transition: background-color 0.1s ease;
 }
 
 .card-content {
-  position: relative;
-  z-index: 1;
-  color: white;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 100%;
+	position: relative;
+	z-index: 1;
+	color: white;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 100%;
 }
 
 .icon {
-  /* Стили для иконки */
+	/* Стили для иконки */
 }
 
 .title {
-  /* Стили для заголовка */
-  font-size: 1.5em;
-  margin-top: 0.5em;
+	/* Стили для заголовка */
+	font-size: 1.5em;
+	margin-top: 0.5em;
 }
 
 /* Анимация волн */
 @keyframes waveAnimation {
-  0% { background-position: 0 2000px; }
-  100% { background-position:  0 -1350px; }
+	0% {
+		background-position: 0 2000px;
+	}
+	100% {
+		background-position: 0 -1350px;
+	}
 }
 
 .card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 300%;
-  height: 100%;
-  background-image: url('/HeroBg.png'); /* Путь к изображению с волнами */
-  background-size: cover;
-  z-index: 0;
-  opacity: 0; /* Скрыть волну до наведения */
-  transition: opacity 0.1s ease, background 0.1s ease;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 300%;
+	height: 100%;
+	background-image: url('/HeroBg.png'); /* Путь к изображению с волнами */
+	background-size: cover;
+	z-index: 0;
+	opacity: 0; /* Скрыть волну до наведения */
+	transition: opacity 0.1s ease, background 0.1s ease;
 }
 
 .card:hover::before {
-  opacity: 1; /* Показать волну при наведении */
-  animation: waveAnimation 10s linear infinite; /* Запуск анимации волн */
+	opacity: 1; /* Показать волну при наведении */
+	animation: waveAnimation 10s linear infinite; /* Запуск анимации волн */
 }
