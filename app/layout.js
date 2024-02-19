@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google';
 import '@/globals.css';
 import Header from '@/components/Header';
 import CursorFollower from '@/components/CursorFollower';
+import { Footer } from '@/components/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -16,7 +17,8 @@ export default function RootLayout({ children }) {
 			<body className={`${inter.className}`}>
 				<CursorFollower />
 				<Header />
-				<main className='max-w-5xl mx-auto pt-20 p-4 z-20'>{children}</main>
+				<main className='max-w-6xl mx-auto pt-80 p-4 z-20'>{children}</main>
+				<Footer />
 			</body>
 		</html>
 	);

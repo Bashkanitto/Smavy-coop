@@ -7,13 +7,10 @@ const CursorFollower = () => {
 
 	useEffect(() => {
 		const handleMouseMove = e => {
-			const x = e.clientX;
-			const y = e.clientY;
-
-			cursorRef.current.style.left = `${x}px`;
-			cursorRef.current.style.top = `${y}px`;
-			innerCursorRef.current.style.left = `${x}px`;
-			innerCursorRef.current.style.top = `${y}px`;
+			cursorRef.current.style.left = `${e.x}px`;
+			cursorRef.current.style.top = `${e.y}px`;
+			innerCursorRef.current.style.left = `${e.x}px`;
+			innerCursorRef.current.style.top = `${e.y}px`;
 		};
 
 		window.addEventListener('mousemove', handleMouseMove);
