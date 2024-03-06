@@ -5,6 +5,15 @@
 html {
 	scroll-behavior: smooth;
 }
-:root {
-	--primari-color: #6bffd8;
+.white-btn {
+	padding: 5px 20px;
+	border-radius: 50px;
+	border: 1px solid white;
+	transition: 0.5s;
+}
+
+.white-btn:hover {
+	background: white;
+	color: black;
+	transition: 0.5s;
 }
