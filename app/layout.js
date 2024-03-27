@@ -2,7 +2,6 @@ import { Inter } from 'next/font/google';
 import '@/globals.css';
 import Header from '@/components/Header';
 
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
 	title: 'Smavy Coop',
@@ -12,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang='en'>
-			<body className={`${inter.className}`}>
+			<body>
 				<Header />
 				<main className='max-w-6xl mx-auto pt-80 p-4 z-20'>{children}</main>
 			</body>
