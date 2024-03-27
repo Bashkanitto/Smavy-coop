@@ -1,4 +1,5 @@
 import '@/globals.css';
+import { Inter } from 'next/font/google';
 import Header from '@/components/Header';
 
 export const metadata = {
@@ -11,7 +12,7 @@ export default function RootLayout({ children }) {
 		<html lang='en'>
 			<body>
 				<Header />
-				<main className='max-w-6xl mx-auto pt-80 p-4 z-20'>{children}</main>
+				<main className='mx-auto z-20'>{children}</main>
 			</body>
 		</html>
 	);

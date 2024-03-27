@@ -1,9 +1,9 @@
-import Hero from '@/components/Hero';
+import PortfolioSection from '@/components/PortfolioSection';
 
 export default function App() {
 	return (
 		<>
-			<Hero />
+			<PortfolioSection />
 		</>
 	);
 }
