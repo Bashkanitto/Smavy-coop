@@ -23,7 +23,7 @@ const Services = () => {
               {item.title}
             </h3>
             <div className="info p-5 mx-5">
-              <p className="mt-20 w-full md:w-1/2">{item.p}</p>
+              <p className="mt-40 w-full md:w-1/2">{item.p}</p>
               <ul className="my-5 mx-4 list-disc">
                 {item.ul.map((item) => (
                   <li>{item}</li>
