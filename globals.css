@@ -5,11 +5,23 @@
 html {
 	scroll-behavior: smooth;
 }
+h4{
+	font-size: 20px;
+}
+p{
+	font-size: 12px;
+}
 .white-btn {
 	padding: 5px 20px;
 	border-radius: 50px;
 	border: 1px solid white;
 	transition: 0.5s;
+}
+input{
+	outline: none;
+}
+input::placeholder{
+	font-size: 12px;
 }
 
 .white-btn:hover {
