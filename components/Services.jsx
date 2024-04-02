@@ -14,7 +14,10 @@ const Services = () => {
         {servicesCards.map((item) => (
           <div
             key={item.id}
-            className={`card1 relative bg-[url(/${item.background})] bg-cover text-${item.color} rounded-2xl`}
+            style={{
+              background: `url(${item.bg})`,
+            }}
+            className={`card1 relative bg-cover text-${item.color} rounded-2xl`}
           >
             <h3 className="absolute bg-white py-4 px-10 text-3xl rounded-lg text-black">
               {item.title}
