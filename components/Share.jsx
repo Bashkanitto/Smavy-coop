@@ -14,7 +14,7 @@ const Share = () => {
       <div className="flex gap-2 justify-center overflow-scroll py-10">
         {share.btns.map((item) => (
           <button
-            className="border text-xs md:text-md rounded-full px-4 py-2"
+            className="white-btn border text-xs md:text-md rounded-full px-4 py-2"
             key={item}
           >
             {item}
