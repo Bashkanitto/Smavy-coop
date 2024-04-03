@@ -15,7 +15,7 @@ const Hero = () => {
           к инновациям и стремлениям к достижению выдающихся результатов
         </p>
         <div className="flex gap-2 md:gap-10 my-5 md:my-0 items-center h-10">
-          <button className="border rounded-full border-primary text-primary h-full px-6">
+          <button className="white-btn border rounded-full border-primary text-primary h-full px-6">
             Подробнее
           </button>
           <CustomButton>Оставить заявку</CustomButton>
