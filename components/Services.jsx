@@ -4,7 +4,7 @@ import { servicesCards } from "./Constants";
 
 const Services = () => {
   return (
-    <section className="container mx-auto">
+    <section id="services" className="container mx-auto">
       <h3 className="text-center text-4xl w-2/3 mx-auto">Наши Услуги</h3>
       <p className="text-center w-full sm:w-1/2 lg:w-1/3 mx-auto my-5">
         мы предлагаем широкий спектр цифровых услуг, помогая нашим клиентам

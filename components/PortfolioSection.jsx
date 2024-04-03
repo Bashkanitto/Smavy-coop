@@ -61,7 +61,7 @@ const PortfolioSection = () => {
 	];
 
 	return (
-		<section className='flex flex-col items-center gap-5'>
+		<section id='portfolio' className='flex flex-col items-center gap-5'>
 			<h4 className='text-4xl font-medium'>Портфолио</h4>
 			<p className='w-2/3 lg:w-full text-xs text-center'>
 				Здесь мы с гордостью представляем некоторые из наших лучших <br />{' '}

@@ -5,12 +5,13 @@ import Image from "next/image";
 
 const Benefits = () => {
   return (
-    <section className="container mx-auto">
+    <section id="about" className="container mx-auto">
       <h3 className="text-center text-2xl md:text-4xl w-full md:w-2/3 mx-auto mb-10">
         {benefits.h3}
       </h3>
       <div className="div_items flex flex-col xl:flex-row gap-5 p-4">
         <div className="div1 text-white flex flex-col justify-between gap-5">
+          
           {/* -------- 1 block ------------ */}
           {benefits.divs.map((item) => (
             <div

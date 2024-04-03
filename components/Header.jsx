@@ -29,12 +29,12 @@ const Header = () => {
           className="hidden sm:flex flex-col gap-4 text-black text-xs"
           onClick={toggleMenu}
         >
-          <Link href="#">О нас</Link>
-          <Link href="#">Услуги</Link>
-          <Link href="#">Портфолио</Link>
-          <Link href="#">FAQ</Link>
-          <Link href="#">Контакты</Link>
-          <Link href="#">Оставить заявку</Link>
+          <a href="#about">О нас</a>
+          <a href="#services">Услуги</a>
+          <a href="#portfolio">Портфолио</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contacts">Контакты</a>
+          <a href="#review">Оставить заявку</a>
         </ul>
       </nav>
       <button
