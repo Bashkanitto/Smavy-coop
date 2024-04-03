@@ -11,12 +11,6 @@ h4{
 p{
 	font-size: 12px;
 }
-.white-btn {
-	padding: 5px 20px;
-	border-radius: 50px;
-	border: 1px solid white;
-	transition: 0.5s;
-}
 input{
 	outline: none;
 }
@@ -24,8 +18,17 @@ input::placeholder{
 	font-size: 12px;
 }
 
+button{
+	transition: 0.5s;
+}
 .white-btn:hover {
-	background: white;
-	color: black;
+	background: #4B40BB;
+	color: white;
+	transition: 0.5s;
+}
+.btn:hover{
+	border: 1px solid #4B40BB;
+	background: rgb(255, 255, 255);
+	color: #4B40BB;
 	transition: 0.5s;
 }
